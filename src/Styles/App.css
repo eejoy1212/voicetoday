@@ -1,0 +1,95 @@
+.App {
+  /* position: relative; */
+ width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  padding-bottom: 31px;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  overflow-x: hidden;
+
+}
+.month {
+  /* align-items: center;
+  justify-content: center; */
+  padding-top: 4px;
+  color: #bdbdbd;
+}
+.year {
+  padding-top: 4px;
+  color: #bdbdbd;
+}
+.day {
+  padding-top: 4px;
+  color: #bdbdbd;
+}
+.slash {
+  padding-top: 4px;
+  color: #bdbdbd;
+  margin: 0 4px 0 4px;
+}
+.spacer {
+  flex-grow: 1;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.chip {
+  cursor: pointer;
+  font-size: 10px;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+}
+.chip:hover {
+  background-color: #bdbdbd;
+}
+.fabZone {
+  display: flex;
+  /* margin-right: 10px; */
+  justify-content: flex-end;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+
+}
+.fab{
+  display: flex;
+  cursor: pointer;
+  padding:16px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  border: none;
+  background-color: #d3d3d3;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  gap:12px;
+}
+.fab:hover{
+  background-color: #bdbdbd;
+}
+.popup{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  background-color: red;
+  border-radius: 6px;
+  padding:10px;
+}
+.todoCards{
+  /* width: 100%;
+  height:100%; */
+  background-color: red;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: hidden;
+padding-top: 31px;
+}

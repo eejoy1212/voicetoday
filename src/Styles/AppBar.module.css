@@ -1,0 +1,40 @@
+.appBar {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  z-index: 999;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-end; */
+  align-items: center;
+  /* background-color: aqua; */
+  color: black;
+  font-size: 14px;
+  /* padding:  0 20px; */
+  margin-bottom: 10px;
+}
+
+.selected {
+  font-weight: 700;
+  font-size: 20px;
+}
+.menu {
+  padding: 0;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-top: 4px;
+  /* margin-bottom: 4px; */
+}
+.filter {
+  margin-right: 20px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin-top: 4px;
+  /* margin-bottom: 4px; */
+}
