@@ -2,7 +2,7 @@ import './Styles/App.css';
 import AppBar from './Components/AppBar/AppBar';
 import Card from './Components/Card/Card';
 import FloatingBtn from './Components/FAB/FloatingBtn';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { TodoModel } from './Model/Todo';
 import FabPopup from './Components/Popup/FabPopup';
 export default function App() {

@@ -1,19 +1,36 @@
-.title{
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
 }
-.contents{
-display: flex;
-flex-direction: column;
-gap:10px;
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.applyBtnZone{
- 
-    display: flex;
-    justify-content: flex-end;
+
+.applyBtnZone {
+  display: flex;
+  justify-content: flex-end;
 }
-.applyBtnZone>button{
+
+.applyBtnZone > button {
   cursor: pointer;
+}
+
+.toRow {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: 100%;
+  /* padding: 0 10px; */
+}
+
+.iconBtn {
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 10px;
 }

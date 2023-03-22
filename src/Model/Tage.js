@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 export class TagModel {
-  constructor() {
+  constructor({ name = '', color = '#fff' }) {
     this.id = uuidv4();
-    this.name = '';
-    this.color = '';
+    this.name = name;
+    this.color = color;
   }
 }

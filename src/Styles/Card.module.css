@@ -1,6 +1,6 @@
 .card {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   margin: 10px 20px;
   background-color: black;
@@ -9,31 +9,41 @@ flex-direction: column;
   font-size: 14px;
   gap: 10px;
 }
+
 .dateZone {
   display: flex;
   align-items: center;
 }
+
 .speakerZone {
   background-color: transparent;
   border: none;
-
-color: white;  cursor: pointer;
+  color: white;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
 }
-.chkZone{  cursor: pointer;
+
+.chkZone {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
-.chkZone > input{
 
-  margin: 0 10px  0 0;
+.chkZone > input {
+  margin: 0 10px 0 0;
   /* padding: 0; */
 }
-.chipsZone{
+
+.chipsZone {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
+}
+
+.doneText {
+  text-decoration: line-through;
+  color: #ccc;
 }

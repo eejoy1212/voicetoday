@@ -40,7 +40,7 @@ export default function Card({ todo }) {
       </div>
       <div className={styles.chipsZone}>
         {todo.tags.map((tag) => (
-          <Chip tag={tag} /> //key 추가하기
+          <Chip name={tag.name} color={tag.color} /> //key 추가하기
         ))}
       </div>
     </div>
