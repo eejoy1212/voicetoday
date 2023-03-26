@@ -1,0 +1,33 @@
+.profileMenu{
+  height:60px;
+  gap: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.avatar{
+  content: url(https://www.w3schools.com/howto/img_avatar.png);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: blue;
+}
+.info{
+  width: 74px;
+  padding: 10px 0;
+}
+.name{
+  font-size: 12px;
+  font-weight: 600;
+}
+.content{
+  width: 74px;
+  /* height: max-content; */
+  font-size: 10px;
+  color: #C1C1C1;
+  background-color: red;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,12 +1,16 @@
 .App {
   /* position: relative; */
- width: 100vw;
+
+ width: 100%;
   height: 100vh;
-  z-index: 0;
-  padding-bottom: 31px;
-  text-align: center;
-  background-color: white;
+  /* z-index: 0; */
+  /* padding-bottom: 31px; */
+  /* text-align: center; */
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+  overflow-y: hidden;
+
   overflow-x: hidden;
 
 }
@@ -50,16 +54,17 @@ ul {
 .chip:hover {
   background-color: #bdbdbd;
 }
-.fabZone {
+/* .fabZone {
   display: flex;
-  /* margin-right: 10px; */
   justify-content: flex-end;
   width: 100vw;
   position: absolute;
   bottom: 0;
+  background-color: aqua;
 
-}
+} */
 .fab{
+  position: absolute;
   display: flex;
   cursor: pointer;
   padding:16px 20px;
@@ -72,6 +77,8 @@ ul {
   align-items: center;
   justify-content: center;
   gap:12px;
+  right: 0;
+  bottom: 0;
 }
 .fab:hover{
   background-color: #bdbdbd;
@@ -87,9 +94,16 @@ ul {
 .todoCards{
   /* width: 100%;
   height:100%; */
-  background-color: red;
-overflow: scroll;
+  /* background-color: red; */
+/* overflow: scroll;
 overflow-x: hidden;
-overflow-y: hidden;
+overflow-y: hidden; */
 padding-top: 31px;
+}
+.divider{
+  background: #d9d9d9;
+  width: 100%;
+  height: 0.5px;
+  border-radius: 10px;
+  margin: 8px 0;
 }

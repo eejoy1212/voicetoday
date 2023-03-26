@@ -1,0 +1,17 @@
+.sideMenu{
+  width: 187px;
+  height: 96.6vh;
+  background-color: white;
+  /* display: flex;
+  flex-grow: 1; */
+  transform: 1s;
+  position: absolute;
+  top: -4vh;
+  /* //임시적으로 그림자 표현한거임 */
+  box-shadow: 15px 0px 5px -2px gray;
+  margin-top: 3vh;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
