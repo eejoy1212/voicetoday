@@ -1,11 +1,10 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styles from '../../Styles/FabPopup.module.css';
 import Chip from '../Chip/Chip';
 import { TagModel } from '../../Model/Tage';
 import ColorPicker from '../ColorPicker/ColorPicker';
 import Dictaphone from '../Function/Voice';
 import ColorPickerModal from '../ColorPicker/ColorPickerModal';
-import { BsMicFill } from 'react-icons/bs';
 
 export default function FabPopup(props) {
   const { onAddTodo, setFabPopup } = props;
@@ -42,6 +41,11 @@ export default function FabPopup(props) {
     setTodo((prev) => ({ ...prev, tags: [...prev.tags, newTag] }));
     setTag('');
   };
+
+  useEffect(() => {
+    if (!speech) return;
+    setTodo(speech);
+  }, [speech]);
 
   const handleTodoText = (e) => {
     setTodo({

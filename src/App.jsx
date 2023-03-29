@@ -13,8 +13,6 @@ export default function App() {
   };
   const onAddTodo = useCallback(
     (todo) => {
-      // if (!fabPopup) {
-      console.log('in function onAddTodo', todo);
       const newTodo = {
         date: new Date(),
         title: todo.title,
@@ -25,10 +23,7 @@ export default function App() {
       const newTodoModel = new TodoModel(newTodo);
 
       setTodos([...todos, newTodoModel]);
-      console.log('애드 함수 호출??', todos);
-      // }
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [fabPopup]
   );
   return (

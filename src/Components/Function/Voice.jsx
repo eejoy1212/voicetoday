@@ -15,7 +15,7 @@ export default function Dictaphone({ setSpeech }) {
 
   const handleClick = () => {
     if (!listening) {
-      SpeechRecognition.startListening({ continuous: true });
+      SpeechRecognition.startListening();
     } else {
       SpeechRecognition.stopListening();
     }
@@ -29,14 +29,5 @@ export default function Dictaphone({ setSpeech }) {
     return <span>Browser doesn't support speech recognition.</span>;
   }
 
-  return (
-    <BsMicFill className={styles.iconBtn} onClick={handleClick} />
-    // <div>
-    //   <p>Microphone: {listening ? 'on' : 'off'}</p>
-    //   <button onClick={SpeechRecognition.startListening}>Start</button>
-    //   <button onClick={SpeechRecognition.stopListening}>Stop</button>
-    //   <button onClick={resetTranscript}>Reset</button>
-    //   <p>{transcript}</p>
-    // </div>
-  );
+  return <BsMicFill className={styles.iconBtn} onClick={handleClick} />;
 }
